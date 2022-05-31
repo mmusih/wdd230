@@ -1,5 +1,6 @@
-const currentYear = 2022;
-document.querySelector("#year").textContent = currentYear;
+let curretDate = new Date();
+const Year = curretDate.getFullYear();
+document.getElementById("year").textContent = Year;
 
 time = document.lastModified;
 document.querySelector("#modified").textContent = time;
