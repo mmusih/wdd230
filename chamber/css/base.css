@@ -1,6 +1,15 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+.page {
+	margin: 1rem auto;
+	background-color: aqua;
+	padding: 10px;
+}
 body {
 	padding: 0;
-	margin: 0;
+	margin: 0, auto;
 }
 
 header {
@@ -9,7 +18,15 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	max-width: 900px;
+	margin: 0 auto;
+	border-bottom: 1px solid #bbb;
+}
+
+footer {
+	background-color: #fff;
+	padding: 5px 0;
+	align-items: center;
+	justify-content: space-between;
 	margin: 0 auto;
 	border-bottom: 1px solid #bbb;
 }
@@ -81,19 +98,45 @@ nav {
 	font-size: clamp(1rem, 2vmin, 1.5rem);
 }
 
-/* .navigation a.ham::before {
-	content: "🍔 ";
-} */
-
+.responsive li {
+	display: block;
+}
 .navigation a:hover {
 	color: white;
 	background-color: black;
 }
 
-aside {
+aside, .name2 {
 	text-align: center;
 	margin: 0.5rem;
 	padding: 0.75rem;
 	border: 1px solid black;
 
+}
+
+.hero img, .event img, .weather img, .news img {
+	width: 100%;
+}
+
+
+.spot {
+	background-color: gray;
+}
+
+.spot3, .join2 {
+	display: none;
+	background-color: grey;
+}
+
+.spot1 {
+	align-content: center;
+}
+.spot img {
+	width: 90%;
+	padding: 0.5rem;
+}
+
+.foothead {
+	text-align: center;
+	padding: 1em;
 }
