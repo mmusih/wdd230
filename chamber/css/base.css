@@ -61,7 +61,7 @@ footer {
 
 .m {
 	letter-spacing: 1pt;
-	color: rgb(9, 145, 9);
+	color: #7cccf1;
 	font-weight: 700;
 	font-size: 0.8rem;
 }
@@ -152,4 +152,8 @@ aside {
 .foothead {
 	text-align: center;
 	padding: 1em;
+}
+
+.headings a {
+	color: #7cccf1;
 }
