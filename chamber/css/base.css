@@ -6,11 +6,17 @@
 	margin: 1rem auto;
 	background-color: rgb(255, 255, 255);
 	padding: 10px;
+	box-sizing: border-box;
 }
 body {
 	padding: 0;
 	margin: 0 auto;
 	font-family: 'Raleway', sans-serif;
+}
+
+.man {
+	margin: 10px 20px;
+	box-sizing: border-box;
 }
 
 header {
@@ -156,4 +162,19 @@ aside {
 
 .headings a {
 	color: #7cccf1;
+}
+
+.hero {
+	position: relative;
+}
+
+.overlay {
+	position: absolute;
+	bottom: 25px;
+	left: 250px;
+	background: radial-gradient(#eee, #4567aa);
+	border: 1px solid #000;
+	padding: 0.8rem;
+	box-shadow: 0 0 30px #333;
+	opacity: 0.9;
 }
