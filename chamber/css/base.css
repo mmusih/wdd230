@@ -133,7 +133,7 @@ aside {
 	background-color: #725d5d;
 }
 
-.hero img, .event img, .weather img, .news img {
+.hero img {
 	width: 100%;
 }
 
@@ -177,4 +177,19 @@ aside {
 	padding: 0.8rem;
 	box-shadow: 0 0 30px #333;
 	opacity: 0.9;
+}
+
+#banner {
+	display: none;
+	margin: 0 auto;
+	border: 1px solid #000;
+	background: radial-gradient(rgb(0, 0, 0), #493333);
+	padding: 0.5rem;
+	text-align: center;
+	color: rgb(255, 255, 255);
+	font-weight: 700;
+}
+
+.weather img {
+	width: 80px;
 }
