@@ -4,10 +4,9 @@
         width: 100%;
     } */
 
-    .hero img, .event img, .weather img, .news img {
+    .hero img, .event img, .news img {
         width: 100%;
     }
-    
     
     .spot {
         background-color: gray;

@@ -4,8 +4,8 @@ if (d == 1 || d == 2) {
 	banner.style.display = "block";
 }
 
-const close = document.querySelector("#close");
+const closeBtn = document.getElementById("closeBtn");
 
-close.addEventlistener("click", () => {
+closeBtn.addEventListener("click", () => {
 	banner.style.display = "none";
-});
+  });
