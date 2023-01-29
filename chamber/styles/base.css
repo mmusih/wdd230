@@ -1,0 +1,179 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+.page {
+	margin: 1rem auto;
+	background-color: rgb(255, 255, 255);
+	padding: 10px;
+	box-sizing: border-box;
+}
+body {
+	padding: 0;
+	margin: 0 auto;
+	font-family: 'Raleway', sans-serif;
+}
+
+main {
+	margin: 1rem;
+}
+
+header {
+	background-color: #a1eb84;
+	padding: 5px 0;
+	display: flex;
+	/* display: grid;
+	grid-template-columns: 3fr 1fr 1fr; */
+	align-items: center;
+	margin: 0 auto;
+	border-bottom: 1px solid #bbb;
+	color: #000;
+}
+
+.head {
+	background-color: #a1eb84;
+}
+
+.logo img, .logofoot img {
+    width: auto;
+	border-radius: 8px 35px;
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+}
+
+.logofoot img {
+	width: 20%;
+}
+footer {
+	background-color: #a1eb84;
+	display: flex;
+	flex-flow: column;
+	text-align: center;
+	justify-content: center;
+	padding: 10px;
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+	margin-left: 1rem;
+}
+
+.logo img {
+	width: 80px;
+	height: auto;
+}
+
+.headings {
+	display: flex;
+	flex-direction: column;
+	margin-left: .5rem;
+}
+
+.headings2 {
+	align-items: center;
+}
+.headings h1 {
+	font-size: 1.5rem;
+}
+
+.m {
+	letter-spacing: 1pt;
+	color: #7cccf1;
+	font-weight: 700;
+	font-size: 0.8rem;
+}
+
+.social {
+	margin-right: 1.5rem;
+}
+
+.social svg {
+	width: 25px;
+	height: auto;
+}
+
+.navigation li:first-child {
+	display: block;
+}
+
+nav {
+	margin: 0 auto;
+	max-width: auto;
+	background-color: #18bb92;
+	/* background-color: tomato; */
+}
+.navigation {
+	list-style: none;
+	padding: 0;
+	color: #fff;
+}
+
+.navigation li {
+	display: none;
+}
+
+.navigation a {
+	display: block;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+	color: #fff;
+	font-weight: 700;
+	transition: 0.5s;
+	font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+.responsive li {
+	display: block;
+}
+.navigation a:hover {
+	color: green;
+	background-color: #fff;
+}
+
+aside {
+	text-align: center;
+	margin: 0.5rem;
+	padding: 0.3rem;
+	border: 1px solid #ffffff;
+	color: rgb(12, 11, 11);
+	background-color: #7fdd5a;
+}
+
+.date {
+	background-color: #a1eb84;
+	align-items: center;
+	padding: 0.2rem;
+	margin-bottom: 0.2rem;
+}
+
+.grid-container {
+	display: grid;
+	row-gap: 0.5em;
+	grid-template-columns: 1fr;
+}
+.hero, .event, .news, .weather, .spots, .join {
+	background-color: rgba(179, 173, 173, 0.8);
+	border: 1px solid rgba(0, 0, 0, 0.8);
+	padding: 20px;
+	font-size: 20px;
+	height: 80px;
+	width: auto;
+	text-align: center;
+}
+
+.spot3, .join {
+	display: none;
+}
+
+.spot1, .spot2 {
+	background-color: rgba(255, 255, 255, 0.8);
+	border: 1px solid rgba(0, 0, 0, 0.8);
+	padding: 0.5em;
+	font-size: 20px;
+	height: auto;
+	width: auto;
+	text-align: center;
+}
