@@ -1,0 +1,61 @@
+@media (min-width: 48em) {
+    
+    .navigation {
+		display: flex;
+        flex-direction: row;
+	}
+	.navigation li:first-child {
+		display: none;
+	}
+
+    .navigation li {
+		display: block;
+		justify-items: center;
+        background-color: #a1eb84;
+        padding: 1em;
+	}
+
+    .spot3 {
+        display: block;
+    }
+
+    .grid-container {
+        display: grid;
+        row-gap: 0.5em;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-column-gap: 1rem;
+    }
+
+    .event {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .weather {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .join {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    .hero {
+        grid-column: 2/4;
+        grid-row: 1/3;
+        height: auto;
+    }
+
+    .spots {
+        grid-column: 4/5;
+        grid-row: 1/4;
+        height: auto;
+        grid-template-columns: 1fr;
+    }
+
+    .news {
+        grid-column: 2/4;
+        grid-row: 3/4;
+    }
+}

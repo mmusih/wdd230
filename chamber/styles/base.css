@@ -20,14 +20,18 @@ main {
 
 header {
 	background-color: #a1eb84;
-	padding: 5px 0;
+	padding: 5px;
 	display: flex;
 	/* display: grid;
 	grid-template-columns: 3fr 1fr 1fr; */
 	align-items: center;
-	margin: 0 auto;
-	border-bottom: 1px solid #bbb;
+	margin: auto;
 	color: #000;
+	flex: 1 1 100%;
+}
+
+header > div {
+  	flex: 1 1 auto;
 }
 
 .head {
@@ -80,7 +84,7 @@ footer {
 
 .m {
 	letter-spacing: 1pt;
-	color: #7cccf1;
+	color: #000000;
 	font-weight: 700;
 	font-size: 0.8rem;
 }
@@ -101,7 +105,7 @@ footer {
 nav {
 	margin: 0 auto;
 	max-width: auto;
-	background-color: #18bb92;
+	/* background-color: #18bb92; */
 	/* background-color: tomato; */
 }
 .navigation {
@@ -168,7 +172,7 @@ aside {
 	display: none;
 }
 
-.spot1, .spot2 {
+.spot1, .spot2, .spot3 {
 	background-color: rgba(255, 255, 255, 0.8);
 	border: 1px solid rgba(0, 0, 0, 0.8);
 	padding: 0.5em;
