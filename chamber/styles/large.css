@@ -11,7 +11,7 @@
     .navigation li {
 		display: block;
 		justify-items: center;
-        background-color: #a1eb84;
+        background-color: #002349;
         padding: 1em;
 	}
 
@@ -41,7 +41,7 @@
         grid-row: 3/4;
     }
 
-    .hero {
+    .herodiv {
         grid-column: 2/4;
         grid-row: 1/3;
         height: auto;
