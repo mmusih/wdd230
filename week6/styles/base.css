@@ -1,0 +1,105 @@
+
+.head img {
+    width: 80%;
+}
+
+.mobile img, .tab img, .pc img {
+    width: 60%;
+}
+
+.mobile, .tab, .pc {
+    width: 15rem;
+    height: auto;
+    border: 2px solid green;
+}
+
+.tab, .pc {
+    display: none;
+
+}
+
+p {
+    font-size: large;
+    font-weight: 900;
+}
+.mobile, .tab, .pc {
+    color: green;
+}
+
+
+
+
+/* ---------------------------------------------------------------------
+--------------------------------------------------------------------- */
+@media (min-width: 600px) {
+    .tab {
+        display: block;
+    }
+
+    .mobile, .pc {
+        display: none;
+    }
+}
+
+
+
+/* @media (min-width: 600px) {
+    .mobile, .pc {
+        display: none;
+    }
+
+    .tab {
+        display: block;
+    }
+
+    .tab img {
+        width: 100%;
+    }
+} */
+
+
+/* For large screens */
+/* ------------------------------------------------------------------- */
+@media (min-width: 768px) {
+    .mobile, .tab {
+        display: none;
+    }
+
+    .pc {
+        display: block;
+    }
+
+    .pc img {
+        width: 100%;
+    }
+}
+
+/* -----------------------------------------------------
+for printing */
+
+@media print {
+    .page img {
+        display: none;
+    }
+}
+
+/* ORIENTATION */
+
+
+@media (orientation: landscape) {
+   .page {
+    background-color: #000;
+   }
+}
+
+/* @media (orientation: portrait) {
+    .page {
+        background-color: #23aa17d7;
+    }
+} */
+
+/* @media (orientation: portrait) and (max-width: 400px) {
+    .page {
+        background-color: blue;
+    }
+} */

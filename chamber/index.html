@@ -20,7 +20,7 @@
             <header>
                 <div class="logo">
                     <picture>
-                        <img src="images/logo.png" alt="Gaborone Chamber of Commerce logo">
+                        <img src="images/logo.webp" alt="Gaborone Chamber of Commerce logo">
                     </picture>
                     <section class="headings">
                         <h1>Gaborone</h1>
@@ -88,7 +88,10 @@
                     <div class="hero">
                         <section class="welcometxt">
                             <h2>Welcome to Gaborone</h2></section>
-                        <img src="images/gaborone2.jpg" alt="gaborone image">
+                        <img src="images/gaborone2.webp" alt="gaborone image" sizes="50vw"
+                            srcset="images/hero400.webp 400w,
+                                images/hero600.webp 600w,
+                                images/hero800.webp 800w">
                     </div>
                         <section class="joinhero">
                             <a href="index.html">Join the chamber</a>
@@ -100,7 +103,16 @@
                     </div>
                     <div class="weather">
                         <h3>weather</h3>
-                        <p>adfa afafa adfadf</p>
+                        <section class="weatherpic">
+                            <picture>
+                                <img src="images/clouds.webp" alt="weather icon">
+                            </picture>
+                            <p>27&deg;C</p>
+                        </section>
+                        <section class="weathertxt">
+                            <p>Wind Speed: 11km/h</p>
+                            <p>Wind Chill: <span id="windChill"></span></p>
+                        </section>
                     </div>
                     <div class="news">
                         <h3>News Release</h3>
@@ -109,7 +121,7 @@
                     <div class="spots">
                     <div class="spot1">
                         <h3>Royal Logistics</h3>
-                        <picture><img src="images/logistics.png" alt="logistics company logo"></picture>
+                        <picture><img src="images/logistics.webp" alt="logistics company logo"></picture>
                         <p>Always on time!</p>
                         <section class="sp1">
                             <p>Rongo@royallogistics.com</p>
@@ -118,7 +130,7 @@
                     </div>
                     <div class="spot2">
                         <h3>Farmers Delight</h3>
-                        <picture><img src="images/farmer.png" alt="farmer logo"></picture>
+                        <picture><img src="images/farmer.webp" alt="farmer logo"></picture>
                         <p>You are what you eat.</p>
                         <section class="sp2">
                             <p>Lebo@farmersdelight.com</p>
@@ -127,7 +139,7 @@
                     </div>
                     <div class="spot3">
                         <h3>Nynex Security</h3>
-                        <picture><img src="images/security.png" alt="security company logo"></picture>
+                        <picture><img src="images/security.webp" alt="security company logo"></picture>
                         <p>Ready to protect you.</p>
                         <section class="sp3">
                             <p>jala@nynexsecurity.com</p>
@@ -148,13 +160,13 @@
             <footer>
                 <div class="logofoot" id="logo">
                     <picture>
-                        <img src="images/logo.png" alt="Gaborone Chamber of Commerce logo">
+                        <img src="images/logo.webp" alt="Gaborone Chamber of Commerce logo">
                     </picture>
                     <section class="headings2">
                         <h1>Gaborone</h1>
                         <p class="m">Chamber of Commerce</p>
                         <p>Gaborone,
-                            Central Business District, office 9
+                         Central Business District, office 9
                         </p>
                     </section>
                 </div>
@@ -177,6 +189,7 @@
             </footer>
             <script src="scripts/base.js"></script>
             <script src="scripts/pop.js"></script>
+            <script src="scripts/windchill.js"></script>
         </div>
         </div>
     </div>

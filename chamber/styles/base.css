@@ -249,9 +249,10 @@ footer {
 	color: #FFD700;
 }
 
-.sp1, .sp2, .sp3 {
+.sp1, .sp2, .sp3, .weathertxt {
 	border-top: 1px solid #FFD700;
 	margin-top: 1rem;
+	padding-top: 0.2rem;
 }
 
 .herodiv {
@@ -312,4 +313,21 @@ a:active { text-decoration: none; }
 	text-align: center;
 	color: rgb(255, 255, 255);
 	font-weight: 700;
+}
+
+.weatherpic img {
+	width: 50%;
+}
+
+.weatherpic {
+	display: flex;
+	flex-direction: row;
+}
+
+.weatherpic p {
+	margin-top: 3rem;
+	margin-right: 1rem;
+	font-size: x-large;
+	font-weight: 900;
+	padding: 0;
 }
