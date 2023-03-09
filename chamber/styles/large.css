@@ -67,4 +67,8 @@
     .weatherpic img {
         width: 60%;
     }
+
+    .imagegallery {
+        display: flex;
+    }
 }

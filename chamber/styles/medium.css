@@ -74,4 +74,8 @@
         margin-top: 1.2rem;
     }
 
+    .imagegallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }
