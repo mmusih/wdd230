@@ -335,10 +335,7 @@ a:active { text-decoration: none; }
 div.gallery {
 	border: 1px solid #ccc;
 }
-  
-div.gallery:hover {
-	border: 1px solid #777;
-}
+
   
 div.gallery img {
 	width: 100%;
@@ -348,4 +345,17 @@ div.gallery img {
 div.desc {
 	padding: 15px;
 	text-align: center;
+}
+
+iframe{
+	height: 40%;
+	width: auto;
+}
+
+.foothead p {
+	padding: 0.5em;
+}
+
+.name2 {
+	margin-top: 0.2em;
 }

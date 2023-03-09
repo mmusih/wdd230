@@ -78,4 +78,10 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
+
+    div.gallery:hover {
+        border: 4px solid #FFD700;
+        background-color: black;
+        color: rgb(255, 255, 255);
+    }
 }
