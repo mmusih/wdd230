@@ -24,7 +24,7 @@ images.forEach(image => {
     imageObserver.observe(image);
 });
 
-///////////////////////////////////////////////////////////////////////////
+/////////////////////////////--Visits--local--storage--///////////////////////////////////////
 const todayDisplay = document.querySelector(".today");
 const visitsDisplay = document.querySelector(".visits");
 

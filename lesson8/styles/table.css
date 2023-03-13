@@ -1,0 +1,42 @@
+table {
+    border: thin solid rgb(20, 18, 18);
+    border-collapse: collapse;
+    margin: 0 auto;
+    font-size: 1.5rem;
+}
+
+td {
+    text-align: center;
+}
+
+td,
+th {
+    padding: 5px 10px;
+    text-align: center;
+    border: thin solid rgb(21, 20, 20);
+}
+
+thead tr:first-child th,
+thead tr:nth-child(2) th:first-child {
+    background-color: #2c2b2b;
+    color: white;
+    text-align: center;
+    border: 1px solid #000000;
+}
+
+thead tr:nth-child(2) th:nth-child(2), thead tr:nth-child(2) th:nth-child(3), thead tr:nth-child(2) th:nth-child(4) {
+    background-color: #837f7f;
+    color: white;
+    text-align: center;
+    border: 1px solid #000000;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #d6d4d4;
+}
+
+caption {
+    caption-side: bottom;
+    font-size: medium;
+    padding-top: 0.2em;
+}
