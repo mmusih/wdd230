@@ -1,0 +1,45 @@
+Header, footer {
+    text-align: center;
+    font-size: 1rem;
+    color:rgb(0, 0, 139);
+    }
+    
+    
+main {
+    margin: 0.8rem;
+    background-color: rgba(255, 255, 255, 0.65);
+    box-shadow: 1px 0px 30px 15px #083355e6;
+    color: #fff;
+}
+    
+div .cards {
+    width: 100%;
+}
+    
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    text-align: center;
+    gap: 10px;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.cards img {
+    width: auto;
+    max-width: 325px;
+    height: 300px;
+}
+
+section {
+    border: solid 1px;
+    border-radius: 1rem;
+    background-color: #083355e6;
+    padding: .75rem;
+}
+    
+h2 {
+    font-size: 2.5rem;
+    color: white;
+    font-weight: 800;
+}
