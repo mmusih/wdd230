@@ -16,7 +16,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&display=swap" rel="stylesheet">
 </head>
-
 <body>
     <div class="page">
         <div class="head">
@@ -81,88 +80,128 @@
                 <aside></aside>
             </div>
         </div>
-        <main>
-            <div id="banner">
-                <p>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p>
-                <button id="closeBtn">❌</button>
-            </div>
-            <div class="grid-container">
-                <div class="herodiv">
-                    <div class="hero">
-                        <section class="welcometxt">
-                            <h2>Welcome to Gaborone</h2>
-                        </section>
-                        <img src="images/gaborone2.webp" alt="gaborone image" sizes="50vw"
-                            srcset="images/hero400.webp 400w,
-                                images/hero600.webp 900w,
-                                images/hero800.webp 960w">
-                    </div>
-                    <section class="joinhero">
-                        <a href="index.html">Join the chamber</a>
-                    </section>
-                </div>
-                <div class="event">
-                    <h3>Ribbon Cutting</h3>
-                    <p>Join us for the grand opening of the the diamond shack.</p>
-                </div>
-                <div class="weather">
-                    <h3>weather</h3>
-                    <section class="weatherpic">
-                        <picture>
-                            <img src="images/clouds.webp" alt="weather icon">
-                        </picture>
-                        <p>27&deg;C</p>
-                    </section>
-                    <section class="weathertxt">
-                        <p>Wind Speed: 11km/h</p>
-                        <p>Wind Chill: <span id="windChill"></span></p>
-                    </section>
-                </div>
-                <div class="news">
-                    <h3>News Release</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut tortor felis. Integer aliquet
-                        congue magna vel porta. Donec maximus, leo vitae condimentum suscipit, elit risus porttitor mi,
-                        ut vestibulum nisi odio eu augue. Duis tincidunt dignissim justo ut consectetur. Nam ultricies
-                        ex a lacus varius, sit amet varius nisl varius.</p>
-                </div>
-                <div class="spots">
-                    <div class="spot1">
-                        <h3>Royal Logistics</h3>
-                        <picture><img src="images/logistics.webp" alt="logistics company logo"></picture>
-                        <p>Always on time!</p>
-                        <section class="sp1">
-                            <p>Rongo@royallogistics.com</p>
-                            <p>+267-7129-2812 | Website</p>
-                        </section>
-                    </div>
-                    <div class="spot2">
-                        <h3>Farmers Delight</h3>
-                        <picture><img src="images/farmer.webp" alt="farmer logo"></picture>
-                        <p>You are what you eat.</p>
-                        <section class="sp2">
-                            <p>Lebo@farmersdelight.com</p>
-                            <p>+267-7129-2912 | Website</p>
-                        </section>
-                    </div>
-                    <div class="spot3">
-                        <h3>Nynex Security</h3>
-                        <picture><img src="images/security.webp" alt="security company logo"></picture>
-                        <p>Ready to protect you.</p>
-                        <section class="sp3">
-                            <p>jala@nynexsecurity.com</p>
-                            <p>+267-73084-999 | Website</p>
-                        </section>
-                    </div>
-                </div>
-                <div class="join" id="join">
-                    <section class="joinbtn">
-                        <a href="index.html">Join Us!</a>
-                    </section>
-                    <section class="jointxt">
-                        <p>Discover the benefits and opportunities of joining our Chamber of Commerce.</p>
-                    </section>
-                </div>
-            </div>
+    <main class="joinpage">
+    <div class="form">
+        <form method="get" action="thankyou.html">
+    
+            <fieldset class="form">
+            <Legend> Member Registration</Legend>
+    
+                    <label class="top" for="name">First Name*
+                    <input class="box" type="text" id="name" name="user_name"  required></label>
+                    <label class="top" for="lastname">Last Name*
+                    <input class="box" type="text" id="lastname" name="user_lastname" required></label>
+                    <label class="top" for="position">Business Title*
+                    <input class="box" type="text" id="position" name="user_position" pattern="[A-Z a-z-' ']{7,}"></label>
+                    <label class="top" for="mail">E-mail Address*
+                    <input class="box" type="email" id="mail" name="user_email" placeholder="someone@gmail.com" required></label>
+                    <label class="top" for="phone">Cell Phone Number*
+                    <input class="box" type="tel" id="phone" name="user_phone" placeholder="###-###-####"  required></label>
+                    <label class="top" for="busname">Business Name*
+                    <input class="box" type="text" id="busname" name="bus_name" required></label>
+            </fieldset>
+            <fieldset class="levform">
+            <legend>Membership Level</legend>
+            <table class="table1">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th scope="col">NP</th>
+                        <th scope="col">Bronze</th>
+                        <th scope="col">Silver</th>
+                        <th scope="col">Gold</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Trainings/Advising</th>
+                        <td>✔️</td>
+                        <td>✔️</td>
+                        <td>✔️</td>
+                        <td>✔️</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Advertising</th>
+                        <td>✔️</td>
+                        <td>❌</td>
+                        <td>✔️</td>
+                        <td>✔️</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Event Discounts</th>
+                        <td>✔️</td>
+                        <td>❌</td>
+                        <td>❌</td>
+                        <td>✔️</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Monthly fee</th>
+                        <td>No Fee</td>
+                        <td>$20</td>
+                        <td>$50</td>
+                        <td>$100</td>
+                    </tr>
+                </tbody>
+            </table>
+            <input class="form" type="hidden" id="member_date" name="member_date" value="">
+          <fieldset class="levform">
+            <label> <input type="radio" name="membershiplevel" value="np"> NP Membership</label>
+            <label> <input type="radio" name="membershiplevel" value="bronze"> Bronze Membership</label>
+            <label> <input type="radio" name="membershiplevel" value="silver"> Silver Membership</label>
+            <label> <input type="radio" name="membershiplevel" value="gold"> Gold Membership</label>
+         </fieldset>
+    
+                <fieldset class="form">
+                <legend>Additional Business Information</legend>
+                    <label class="submitButton" for="msg">Description Your Business</label>
+                    <textarea class="commentsBox" id="msg" name="user_message"></textarea>
+            </fieldset>
+            <input class="button" type="submit" value="Send Registration Form">
+        </form>
+        </div>
+        <div class="table2">
+        <table class="table2">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th scope="col">NP</th>
+                    <th scope="col">Bronze</th>
+                    <th scope="col">Silver</th>
+                    <th scope="col">Gold</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Trainings/Advising</th>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                </tr>
+                <tr>
+                    <th scope="row">Advertising</th>
+                    <td>✔️</td>
+                    <td>❌</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                </tr>
+                <tr>
+                    <th scope="row">Event Discounts</th>
+                    <td>✔️</td>
+                    <td>❌</td>
+                    <td>❌</td>
+                    <td>✔️</td>
+                </tr>
+                <tr>
+                    <th scope="row">Monthly fee</th>
+                    <td>No Fee</td>
+                    <td>$20</td>
+                    <td>$50</td>
+                    <td>$100</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
         </main>
         <footer>
             <div class="logofoot" id="logo">
@@ -195,9 +234,9 @@
         <script src="scripts/base.js"></script>
         <script src="scripts/pop.js"></script>
         <script src="scripts/windchill.js"></script>
+
     </div>
     </div>
     </div>
 </body>
-
 </html>
