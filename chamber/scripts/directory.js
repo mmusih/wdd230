@@ -1,4 +1,4 @@
-const requestURL = 'https://mmusih.github.io/wdd230/chamber/directory/data.json';
+const requestURL = 'https://raw.githubusercontent.com/mmusih/wdd230/main/directory/data.json';
 const cards = document.querySelector('.cards');
 const cards_2 = document.querySelector('.cards_2');
 
