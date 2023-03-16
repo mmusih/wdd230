@@ -631,10 +631,10 @@ section .list {
 	font-size: 1.5rem;
 }
 
-section a {
+/* section a {
 	font-family: "Roboto", Arial, sans-serif;
 	font-size: 0.9rem;
-}
+} */
 
 .dirh1 {
 	text-align: center;
