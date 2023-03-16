@@ -1,6 +1,5 @@
 const requestURL = 'https://raw.githubusercontent.com/mmusih/wdd230/main/directory/data.json';
 const cards = document.querySelector('.cards');
-const cards_2 = document.querySelector('.cards_2');
 
 fetch(requestURL)
     .then(function (response) {
@@ -10,7 +9,6 @@ fetch(requestURL)
         const companies = jsonObject['companies'];
         console.table(jsonObject); // temporary checking for valid response and data parsing
         companies.forEach(displaycompanies_1);
-        companies.forEach(displaycompanies_2)
     });
 
 function displaycompanies_1(company) {
@@ -22,7 +20,7 @@ function displaycompanies_1(company) {
 
     // Change the textContent property of the h2 element to contain the prophet's full name
     h2.innerHTML = `<span class = 'companyName'>${company.name}</span>`;
-    p.innerHTML = `<span class='companyAddress'>${company.address}</span> <br> <span class = 'companyPhone'>${company.phone}</span>`;
+    p.innerHTML = `<span class='companyAddress'>${company.address}</span> <br> <span class = 'companyPhone'>${company.phone} </span><br><span class='companyWebsite'><a href="${company.website}">${company.website}</a></span>`;
 
     // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).
     portrait.setAttribute('src', company.image);
@@ -39,34 +37,24 @@ function displaycompanies_1(company) {
     cards.appendChild(card);
 }
 
-function displaycompanies_2(company) {
-    // Create elements to add to the document
-    let card_2 = document.createElement('section');
-    let ul = document.createElement('ul');
-    let li_1 = document.createElement('li');
-    let li_2 = document.createElement('li');
-    let li_3 = document.createElement('li');
-    let li_4 = document.createElement('li');
 
-    // Change the textContent property of the h2 element to contain the prophet's full name
-    li_1.innerHTML = `${company.name} `;
-    li_2.innerHTML = `${company.address}`;
-    li_3.innerHTML = `${company.phone} `;
-    li_4.innerHTML = `${company.website}`;
+// Make provision to toggle between grid and list
 
+const gridbutton = document.querySelector("#grid");
+const listbutton = document.querySelector("#list");
+const display = document.querySelector("article");
 
+// The following code could be written cleaner. How? We may have to simplfiy our HTMl and think about a default view.
 
+gridbutton.addEventListener("click", () => {
+	// example using arrow function
+	display.classList.add("grid");
+	display.classList.remove("list");
+});
 
-    // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).
+listbutton.addEventListener("click", showList); // example using defined function
 
-    // Add/append the section(card) with the h2 element
-    ul.appendChild(li_1);
-    ul.appendChild(li_2);
-    ul.appendChild(li_3);
-    ul.appendChild(li_4);
-    card_2.appendChild(ul);
-
-
-    // Add/append the existing HTML div with the cards class with the section(card)
-    cards_2.appendChild(card_2);
+function showList() {
+	display.classList.add("list");
+	display.classList.remove("grid");
 }
