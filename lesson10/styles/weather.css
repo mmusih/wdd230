@@ -1,0 +1,24 @@
+div {
+    color: #ffffff;
+    border: 1px solid #0a0a0a;
+    width: 30%;
+    background-color: #0b77eb;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div h1 {
+    margin-top: 1rem;
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+div h2 {
+    margin-top: 1rem;
+    font-size: 1.2em;
+    font-weight: bolder;
+}
+
+p, h1, h2 {
+    padding-left: 0.2rem;
+}
