@@ -1,4 +1,4 @@
-// select HTML elements in the document
+//---------------- weather---Gaborone------------
 
 const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');

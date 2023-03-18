@@ -104,20 +104,20 @@
                 </div>
                 <div class="event">
                     <h3>Ribbon Cutting</h3>
-                    <p>Join us for the grand opening of the the diamond shack.</p>
+                    <p>Join us for the grand opening of the diamond shack.</p>
                 </div>
-                <div class="weather">
-                    <h3>weather</h3>
-                    <section class="weatherpic">
-                        <picture>
-                            <img src="images/clouds.webp" alt="weather icon">
-                        </picture>
-                        <p>27&deg;C</p>
-                    </section>
-                    <section class="weathertxt">
-                        <p>Wind Speed: 11km/h</p>
-                        <p>Wind Chill: <span id="windChill"></span></p>
-                    </section>
+                <div class="weather"><h2>Gaborone Weather</h2> <hr>
+                    <div class="weather-div">
+                           <div class="weather-container">
+                           <h2><span id="current-temp"></span> °C</h2> 
+                           <figure>
+                           <img src="#" alt="" id="weathericon">
+                           <figcaption id="figcaption"></figcaption>
+                           </figure>
+                           </div>
+                <hr><br><p>Wind: <span id="windspeed"></span> km/hr</p>
+                <p>Wind Chill: <span id="windchill"></span><span id="chillUnits"></span></p>
+                            </div>
                 </div>
                 <div class="news">
                     <h3>News Release</h3>
@@ -191,6 +191,9 @@
                 <p>&#169; <span id="year"></span> &period;&colon;&verbar;&colon;&period; Mmusi Hubona
                     &period;&colon;&verbar;&colon;&period; WDD Project 230 &period;&colon;&verbar;&colon;&period; <span
                         id="lastModified"></span></p>
+                        <hr>
+                        <br>
+                        <p>Weather data: <a href="https://openweathermap.org/" target="_blank">OpenWeatherMap</a></p>
             </div>
         </footer>
         <script src="scripts/base.js"></script>

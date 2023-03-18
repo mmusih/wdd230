@@ -255,6 +255,27 @@ footer {
 	padding-top: 0.2rem;
 }
 
+.weather-container {
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+	padding-right: 4rem;
+}
+
+.weather {
+	border: 30px solid #36454f;
+	color: black;
+	background-color: #eee6e6;
+}
+
+#weathericon {
+	width: 100%;
+}
+
+#current-temp{
+	width: 100%;
+}
+
 .herodiv {
 	position: relative;
 }
@@ -315,22 +336,6 @@ a:active { text-decoration: none; }
 	font-weight: 700;
 }
 
-.weatherpic img {
-	width: 50%;
-}
-
-.weatherpic {
-	display: flex;
-	flex-direction: row;
-}
-
-.weatherpic p {
-	margin-top: 3rem;
-	margin-right: 1rem;
-	font-size: x-large;
-	font-weight: 900;
-	padding: 0;
-}
 
 div.gallery {
 	border: 1px solid #ccc;
