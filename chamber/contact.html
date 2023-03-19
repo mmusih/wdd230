@@ -81,22 +81,27 @@
                 <aside></aside>
             </div>
         </div>
-        <div class="dirh1">
-        <h1 class="directory">Business Directory</h1></div>
-        <hr>
-        <br>
-        <div class="menu">
-            <button id="grid">⏹️Grid</button>
-            <button id="list">📄List</button>
-        </div>
-        <hr>
-        <br>
-        <main class="businessDirectory">
-            <article class="grid">
-                <section class="dir">
-            <div class="cards"></div>
-        </section>
-        </article>
+        <main>
+            <div class="form">
+                <form action="thankyou.html" method="get">
+                    <fieldset class="form">
+                        <legend>Contac Us</legend>
+                        <label class="top" for="name">Name*
+                        <input class="box" type="text" id="name" name="user_name"  required></label>
+                    
+                        <label class="top" for="mail">E-mail Address*
+                        <input class="box" type="email" id="mail" name="user_email" placeholder="someone@gmail.com" required></label>
+                    
+                        <label class="top" for="subject">Subject*
+                        <input class="box" type="text" id="subject" name="msg-subject" required></label>
+                    
+                        <label class="submitButton" for="msg">Message</label>
+                        <textarea class="commentsBox" id="msgcontact" name="user_message"></textarea>
+                    
+                    <input class="button" type="submit" value="Contact Us" id="contactButton">
+                    </fieldset>
+                </form>
+            </div>
         </main>
         <footer>
             <div class="logofoot" id="logo">
@@ -124,10 +129,14 @@
                 <p>&#169; <span id="year"></span> &period;&colon;&verbar;&colon;&period; Mmusi Hubona
                     &period;&colon;&verbar;&colon;&period; WDD Project 230 &period;&colon;&verbar;&colon;&period; <span
                         id="lastModified"></span></p>
+                        <hr>
+                        <br>
+                        <p>Weather data: <a href="https://openweathermap.org/" target="_blank">OpenWeatherMap</a></p>
             </div>
         </footer>
-        <script src="scripts/directory.js"></script>
-
+        <script src="scripts/base.js"></script>
+        <script src="scripts/pop.js"></script>
+        <script src="scripts/windchill.js"></script>
     </div>
     </div>
     </div>

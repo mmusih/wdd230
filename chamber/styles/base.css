@@ -263,9 +263,9 @@ footer {
 }
 
 .weather {
-	border: 30px solid #36454f;
+	border: 2.5rem solid #36454f;
 	color: black;
-	background-color: #eee6e6;
+	background-color: #a09595;
 }
 
 #weathericon {
@@ -644,4 +644,8 @@ section .list {
 .dirh1 {
 	text-align: center;
 	padding: 1.2rem 0;
+}
+
+#contactButton {
+	margin-top: 1rem;
 }
