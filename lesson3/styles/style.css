@@ -22,6 +22,7 @@ footer {
 } */
 .top2 {
     text-align: left;
+	color: white;
 
 }
 
@@ -33,14 +34,15 @@ footer {
   	margin-right: auto;
 }
 nav {
-	background-color: #18bb92;
+	background-color: #001233;
 	text-align: center;
 	box-shadow: 0 0 30px #3b2b2b;
+	border: 2px solid #FFD700;
 }
 
 header,
 footer {
-	background-color: #a1eb84;
+	background-color: #022953;
 	display: flex;
 	flex-flow: column;
 	align-items: center;
@@ -90,8 +92,8 @@ nav a {
 }
 
 nav a:hover {
-	background-color: #000000;
-	color: #fff;
+	background-color: #FFD700;
+	color: #000000;
     font-weight: 700;
 }
 
@@ -104,7 +106,7 @@ footer {
 	padding: 1rem;
 	justify-content: space-between;
 	font-weight: 700;
-    color: #000000;
+    color: white;
 	margin-top: 10px;
 }
 
