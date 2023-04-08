@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bountiful Foods</title>
+    <meta name="description"
+        content="Mmusi Hubona Bountiful Foods Project WDD 230: Web Front end Development at Brigham Young University - Idaho">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="page">
+        <div class="head">
+            <header>
+                <div class="logo">
+                    <picture>
+                        <a href="index.html"><img src="images/logo (2).png" alt="Fresh logo"></a>
+                    </picture>
+                    <section class="headings">
+                        <h1>Bountiful Foods</h1>
+                        <p class="m">Organic and locally grown</p>
+                    </section>
+                </div>
+                <div class="navi">
+                    <nav>
+                        <ul class="navigation">
+                            <li><a href="#" id="burger" onclick="toggleMenu()"> &#9776;</a></li>
+                            <li><a href="fresh.html">Fresh</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <hr>
+          <div class="social">
+            <div class="soc"><a href="#"><img src="images/whatsapp.png" alt="whatsapp icon"></a></div>
+            <div class="soc"><a href="#"><img src="images/twitter.png" alt="twitter icon"></a></div>
+            <div class="soc"><a href=""><img src="images/instagram.png" alt="instagram icon"></a></div>
+            <div class="soc"><a href="#"><img src="images/skype.png" alt="skype icon"></a></div>
+          </div>
+        </div>
+        <main>
+            <div class="form">
+                <h2 class="join_us">Make Your Own Blend</h2>
+                <form class="form"  onsubmit="save();return false" method="get">
+                    <label for="fname">
+                        First Name: 
+                        <br>
+                        <input type="text" id="fname" name="fname">
+                    </label>
+        
+                    <label for="email">
+                        Email:
+                        <br>
+                        <input type="email" placeholder="user@mail.com" id="email" name="email" required>
+                    </label>
+        
+                    <label for="phone">
+                        Phone:
+                        <br>
+                        <input type="tel" id="phone" name="phone" >
+                    </label>
+        
+                    <div for="member">
+                     Select 3 Fruits:<br>
+                        <div id="myParent"></div>
+                    </div>
+        
+                    <label for="desc">
+                         Instructions:(Optional)<br>
+                        <textarea name="desc" id="desc"></textarea>
+                    </label>
+                    <input type="submit" id="submit" value="submit">
+                </form>
+              
+            </div>
+            <div class="checkoutData">
+                <h1>Your Order Summary</h1>
+                <label for="f_name">
+                    First Name: <br>
+                    <input type="text" id="f_name" name="fname">
+                </label>
+               <br>
+                <label for="e_mail">
+                    Email: <br>
+                     <input type="email" value ="email" id="e_mail" name="email" >
+                </label>
+                <br>
+                <label for="p_hone">
+                    Phone:<br>
+                    <input type="tel" value="phone number" id="p_hone" name="phone" >
+                </label>
+                <br>
+                <label for="f_ruit">
+                    First fruit:<br>
+                    <input type="tel" value="apple" id="f_ruit" name="phone" >
+                </label>
+                <br>
+                <label for="f_ruit2">
+                    Second fruit:<br>
+                    <input type="tel" value="pineapple" id="f_ruit2" name="phone" >
+                </label>
+                <br>
+                <label for="f_ruit3">
+                    Third fruit:<br>
+                    <input type="tel" value="avocado" id="f_ruit3" name="phone" >
+                </label>
+                <br>
+                <label for="instruction">
+                    Special instructin :<br>
+                    <input type="tel" value="Instructions" id="instruction" name="phone" >
+                </label>
+                <br>
+                <label for="order_date">
+                    Order Date :<br>
+                    <input type="text" value="date" id="order_date" name="date" >
+                </label>
+               <div class="nutirions">
+                <h3>Nutritional Information</h3>
+                <p>Total carbohydrates: <span id="carb"></span></p>
+                <p>Total protein: <span id="prot"></span></p>
+                <p>Total fat: <span id="fat"></span></p>
+                <p>Total sugar: <span id="sug"></span></p>
+                <p>Total calories: <span id="cal"></span></p>
+               </div>
+            </div>
+        </main>
+        <div class="items" id="items"></div>
+        <footer>
+            <div class="logofoot" id="logo">
+                <picture>
+                    <a href="index.html"><img src="images/logo (2).png" alt="fresh logo"></a>
+                </picture>
+                <section class="headings2">
+                    <h1>Bountiful Foods</h1>
+                    <p class="m">Organic and locally grown</p>
+                    <p>Long Beach,
+                        Central Business District, office 10
+                    </p>
+                </section>
+            </div>
+            <div class="foothead">
+                <div class="headings2">
+                    <p class="mm">
+                        info@bountifulfoods.com
+                    </p>
+                    <p>+(267) 76-204-774</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5882.140104831297!2d25.89991003554096!3d-24.65419114456616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ebb5b3c2ceea9bf%3A0x49a1769397ae11a1!2sGaborone!5e0!3m2!1sen!2sbw!4v1678363407959!5m2!1sen!2sbw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="name2">
+                <p>&#169; <span id="year"></span> &period;&colon;&verbar;&colon;&period; Mmusi Hubona
+                    &period;&colon;&verbar;&colon;&period; WDD Project 230 &period;&colon;&verbar;&colon;&period; <span
+                        id="lastModified"></span></p>
+                        <hr>
+                        <br>
+                        <p>Weather data: <a href="https://openweathermap.org/" target="_blank">OpenWeatherMap</a></p>
+            </div>
+        </footer>
+        <script src="scripts/base.js"></script>
+        <script src="scripts/fruits.js"></script>
+        <script src="scripts/windchill.js"></script>
+    </div>
+    </div>
+    </div>
+</body>
+
+</html>

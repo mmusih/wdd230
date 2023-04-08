@@ -1,0 +1,22 @@
+@media (min-width: 32em) {
+
+    .navigation {
+		display: flex;
+        flex-direction: row;
+	}
+	.navigation li:first-child {
+		display: none;
+	}
+
+    .navigation li {
+		display: block;
+		justify-items: center;
+        background-color: #555;
+        padding: 1em;
+	}
+    
+    .fruits {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}

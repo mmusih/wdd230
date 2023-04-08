@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bountiful Foods</title>
+    <meta name="description"
+        content="Mmusi Hubona Bountiful Foods Project WDD 230: Web Front end Development at Brigham Young University - Idaho">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="page">
+        <div class="head">
+            <header>
+                <div class="logo">
+                    <picture>
+                        <a href="index.html"><img src="images/logo (2).png" alt="Fresh logo"></a>
+                    </picture>
+                    <section class="headings">
+                        <h1>Bountiful Foods</h1>
+                        <p class="m">Organic and locally grown</p>
+                    </section>
+                </div>
+                <div class="navi">
+                    <nav>
+                        <ul class="navigation">
+                            <li><a href="#" id="burger" onclick="toggleMenu()"> &#9776;</a></li>
+                            <li><a href="fresh.html">Fresh</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <hr>
+          <div class="social">
+            <div class="soc"><a href="#"><img src="images/whatsapp.png" alt="whatsapp icon"></a></div>
+            <div class="soc"><a href="#"><img src="images/twitter.png" alt="twitter icon"></a></div>
+            <div class="soc"><a href=""><img src="images/instagram.png" alt="instagram icon"></a></div>
+            <div class="soc"><a href="#"><img src="images/skype.png" alt="skype icon"></a></div>
+          </div>
+        </div>
+        <main>
+          <h1>More than Just Fruits</h1>
+          <p>Smoothies, juices, frozen yogurt, baguettes, wraps, salads, healthy halo cups, superfood bowls,
+            juices cleanses, and wellness shots. We have the healthy products to meet your fitness goals or craving.</p>
+        </main>
+        <div class="items" id="items"></div>
+        <footer>
+            <div class="logofoot" id="logo">
+                <picture>
+                    <a href="index.html"><img src="images/logo (2).png" alt="fresh logo"></a>
+                </picture>
+                <section class="headings2">
+                    <h1>Bountiful Foods</h1>
+                    <p class="m">Organic and locally grown</p>
+                    <p>Long Beach,
+                        Central Business District, office 10
+                    </p>
+                </section>
+            </div>
+            <div class="foothead">
+                <div class="headings2">
+                    <p class="mm">
+                        info@bountifulfoods.com
+                    </p>
+                    <p>+(267) 76-204-774</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5882.140104831297!2d25.89991003554096!3d-24.65419114456616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ebb5b3c2ceea9bf%3A0x49a1769397ae11a1!2sGaborone!5e0!3m2!1sen!2sbw!4v1678363407959!5m2!1sen!2sbw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="name2">
+                <p>&#169; <span id="year"></span> &period;&colon;&verbar;&colon;&period; Mmusi Hubona
+                    &period;&colon;&verbar;&colon;&period; WDD Project 230 &period;&colon;&verbar;&colon;&period; <span
+                        id="lastModified"></span></p>
+                        <hr>
+                        <br>
+                        <p>Weather data: <a href="https://openweathermap.org/" target="_blank">OpenWeatherMap</a></p>
+            </div>
+        </footer>
+        <script src="scripts/base.js"></script>
+        <script src="scripts/fruits.js"></script>
+        <script src="scripts/windchill.js"></script>
+    </div>
+    </div>
+    </div>
+</body>
+
+</html>
